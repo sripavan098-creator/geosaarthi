@@ -61,3 +61,24 @@
 - [x] Review the visual-polish bundle size and mitigate or explicitly justify the production build warning.
 - [x] Save the visual-polish iteration checkpoint.
 - [x] Strengthen the GeoSaarthi orbital brand mark and guided-route motif across shared navigation and mission labels.
+- [x] Define the 25-route GeoSaarthi information architecture with page-specific visual centerpieces, states, and truthful prototype boundaries.
+- [x] Build a unified responsive operating-system shell with cross-route navigation, command access, keyboard support, and reduced-motion behavior.
+- [x] Build Landing, Dashboard, New Analysis, and Analysis Workspace as distinct connected route experiences.
+- [x] Reconnect the Analysis Workspace to typed validation, intent preview, execution, and metadata-only persistence without restoring the monolithic legacy page.
+- [x] Strengthen route-specific centerpiece composition and resolve diagnostic-label overlaps in the landing, dashboard, analysis-launch, and workspace views.
+- [x] Build Explore Earth, Live Satellites, Change Monitor, My Analyses, Datasets, Models & Tools, and Workflow Lab routes.
+- [x] Build Evidence Center, Spectral Lab, Optical–SAR Lab, Time Machine, Mission Center, Benchmark Lab, and Report Studio routes.
+- [x] Connect Report Studio to the existing typed persisted-report export procedure for saved metadata-only analysis runs.
+- [x] Build Alert Center, System Observatory, Learning Center, Settings, Help & Docs, Judge Mode, and Mission Replay routes.
+- [x] Add route-level loading, empty, success, failure, interaction, accessibility, and responsive states without asserting unavailable live services or model performance.
+- [x] Add automated coverage for route metadata and key operating-system helper behavior.
+- [ ] Verify all 25 routes at desktop and mobile breakpoints, run tests/type checks/build, and save a final checkpoint.
+- [x] Resolve the verified registry-footer overlap and bring the route fallback into the same GeoSaarthi command-center visual language.
+- [x] Implement My Analyses search, filters, and saved-work reopening alongside a Dataset metadata and provenance explorer.
+- [x] Replace the Workflow Lab generic stage strip with selectable orchestration nodes and visible data-contract edges.
+- [x] Implement spectral band selection, educational pixel inspection, and curve reading; add a functional optical–SAR comparison divider and a temporal before/after control.
+- [x] Expand Mission Center, Benchmark Lab, Judge Mode, and Mission Replay into explicit scenario, reproducibility, guided-run, and persisted-trace behaviors.
+- [x] Expand Alert Center, System Observatory, Learning Center, Settings, and Help & Docs into dedicated interactive route experiences.
+- [x] Add a complete Judge Mode proof panel with evidence, confidence, trace, and report handoff for the last declared benchmark result.
+- [x] Add replay backward and forward controls plus a persisted-report stage to Mission Replay.
+- [x] Add API and workflow documentation to Help & Docs, descriptive account and preferences controls to Settings, and distinct inspectable Observatory sections for each declared system area.

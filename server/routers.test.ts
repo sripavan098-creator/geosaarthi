@@ -83,6 +83,25 @@ describe("GeoSaarthi tRPC contracts", () => {
     expect(runs[0]?.inputMetadata).toEqual(JSON.parse(record.inputMetadataJson));
   });
 
+  it("returns a replay-safe analysis record with metadata and trace but no raw imagery", async () => {
+    const record = samplePersistedRun();
+    dbMocks.getAnalysisRunByRunId.mockResolvedValue(record);
+    const caller = appRouter.createCaller(createContext());
+    const replay = await caller.geosaarthi.analysisRun({ runId: record.runId });
+
+    expect(replay?.runId).toBe(record.runId);
+    expect(replay?.trace).toEqual(JSON.parse(record.traceJson));
+    expect(replay?.evidence).toEqual(JSON.parse(record.evidenceJson));
+    expect(replay).not.toHaveProperty("rawImageBytes");
+  });
+
+  it("returns no replay artifact for an unknown persisted analysis identifier", async () => {
+    dbMocks.getAnalysisRunByRunId.mockResolvedValue(undefined);
+    const caller = appRouter.createCaller(createContext());
+
+    await expect(caller.geosaarthi.analysisRun({ runId: "gs-missing" })).resolves.toBeNull();
+  });
+
   it("exports a concise report reconstructed from stored metadata", async () => {
     const record = samplePersistedRun();
     dbMocks.getAnalysisRunByRunId.mockResolvedValue(record);

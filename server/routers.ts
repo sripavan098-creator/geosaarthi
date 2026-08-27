@@ -42,6 +42,25 @@ export const appRouter = router({
           validation: JSON.parse(run.validationJson) as unknown,
         }));
       }),
+    analysisRun: publicProcedure.input(z.object({ runId: z.string().min(3) })).query(async ({ input }) => {
+      const run = await getAnalysisRunByRunId(input.runId);
+      if (!run) return null;
+      return {
+        runId: run.runId,
+        mode: run.mode,
+        task: run.task,
+        query: run.query,
+        status: run.status,
+        overallConfidence: run.overallConfidence,
+        createdAt: run.createdAt,
+        inputMetadata: JSON.parse(run.inputMetadataJson) as unknown,
+        validation: JSON.parse(run.validationJson) as unknown,
+        answer: run.answer,
+        evidence: JSON.parse(run.evidenceJson) as unknown,
+        trace: JSON.parse(run.traceJson) as unknown,
+        provenance: JSON.parse(run.provenanceJson) as unknown,
+      };
+    }),
     executeAnalysis: publicProcedure.input(analysisInputSchema).mutation(async ({ input, ctx }) => {
       const result = executeAnalysis(input);
       await createAnalysisRun({
