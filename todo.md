@@ -45,3 +45,19 @@
 - [x] Run interaction checks, automated tests, production build, and desktop/mobile visual review for the command-center iteration.
 - [x] Save the GeoSaarthi command-center iteration checkpoint.
 - [x] Add frontend unit coverage for the command-center helper logic used by the staged ingestion and imagery workstation controls.
+- [x] Define and apply a unified Earth–satellite–AI–evidence–trace–report narrative across the full experience.
+- [x] Apply the visual narrative through shared hero, workspace, evidence, trace, and report motifs with verifiable interaction and transition states.
+- [x] Add direct Earth-to-workspace, evidence-to-imagery, trace-to-report, and report-to-artifact interactions that make the narrative inspectable in the UI.
+- [x] Refine the shared design system with editorial typography, intentional negative space, spacecraft-glass depth, restrained illumination, and accessible motion rules.
+- [x] Add purposeful Earth, satellite, acquisition, and camera-motion cues that improve discovery without implying live satellite operations.
+- [x] Improve intelligence-workspace interaction feedback, evidence reveal, measurable confidence, and transparent trace progression.
+- [x] Add a contextual evidence-and-trace hand-off that makes result inspection and report progression discoverable after a completed mission.
+- [x] Refine the report, observability, and judge-review surfaces as a readable, high-credibility final mission artifact.
+- [x] Verify animation behavior, reduced-motion support, performance, responsive presentation, automated tests, and production build before checkpointing.
+- [x] Run and record a normal-motion runtime review covering onboarding progression, orbital and scan effects, hover/click feedback, pipeline progression, and proof hand-offs.
+- [x] Verify the visual-polish experience with reduced motion enabled and document the result.
+- [x] Add a review-only reduced-motion URL mode to exercise the runtime motion-safe presentation during visual verification.
+- [x] Remove or revise offscreen content containment that creates excessive blank space in full-page reduced-motion review while retaining a justified performance posture.
+- [x] Review the visual-polish bundle size and mitigate or explicitly justify the production build warning.
+- [x] Save the visual-polish iteration checkpoint.
+- [x] Strengthen the GeoSaarthi orbital brand mark and guided-route motif across shared navigation and mission labels.
