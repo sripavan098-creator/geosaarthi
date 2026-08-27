@@ -32,3 +32,16 @@
 - [x] Add satellite mission telemetry and a mission activity feed labeled as demo simulation.
 - [x] Test the iterative expansion and review responsive rendering.
 - [x] Save the iterative GeoSaarthi expansion checkpoint.
+- [x] Add a collapsible desktop command sidebar, mobile navigation drawer, and keyboard-accessible command palette.
+- [x] Add an accessible top system bar with truthful local/demo telemetry, search, help, theme treatment, and profile controls.
+- [x] Make the top-bar help, profile, and high-contrast theme controls visibly functional rather than informational-only placeholders.
+- [x] Build a dedicated mission-launch view with interactive workflow selection and transparent hand-off into the command center.
+- [x] Enrich satellite-data ingestion with visible staged processing and validation item states without suggesting unavailable parsing capabilities.
+- [x] Add imagery workstation controls for zoom, pan, rotation, fit, reset, coordinate readout, and fullscreen with appropriate demo labels.
+- [x] Add a distinct fit-to-view control that returns the image to its fitted viewport without resetting the grid or measurement state.
+- [x] Add a richer result, execution-trace, and report-generation experience with responsible uncertainty and provenance emphasis.
+- [x] Extend simulated exploration, mission control, and benchmark views while keeping live satellite, metric, and API claims explicitly bounded.
+- [x] Add a skippable cinematic first-visit initialization sequence that transitions into the Earth Intelligence Command Center.
+- [x] Run interaction checks, automated tests, production build, and desktop/mobile visual review for the command-center iteration.
+- [x] Save the GeoSaarthi command-center iteration checkpoint.
+- [x] Add frontend unit coverage for the command-center helper logic used by the staged ingestion and imagery workstation controls.

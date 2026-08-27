@@ -99,10 +99,16 @@
   .chip { border: 1px solid rgba(128,202,228,.22); background: rgba(10,32,51,.5); padding: .42rem .6rem; color: #a9c7d1; font-family: "JetBrains Mono", monospace; font-size: 9px; letter-spacing: .04em; transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease; }.chip:hover { border-color: #79e5fa; color: #d9f8ff; background: rgba(31,100,131,.3); }
   .confidence-orb { display: grid; width: 110px; aspect-ratio: 1; place-items: center; border: 1px solid rgba(124,229,251,.4); border-radius: 50%; background: conic-gradient(#7be5fb calc(var(--confidence) * 1%), rgba(89,129,150,.17) 0); box-shadow: 0 0 32px rgba(52,190,225,.16); }.confidence-orb > div { display: grid; width: 82%; aspect-ratio: 1; place-items: center; border-radius: 50%; background: #0b2033; }
   .desk-nav { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid rgba(128,202,228,.15); background: rgba(5,17,29,.75); backdrop-filter: blur(18px); }
+  .mission-contrast .mission-panel { border-color: rgba(158,240,255,.55); background: linear-gradient(145deg, rgba(17,51,76,.98), rgba(5,25,41,.98)); }
+  .mission-contrast .mission-copy, .mission-contrast .text-slate-400 { color: #d2e5eb; }
   @keyframes signal-pulse { 0% { box-shadow: 0 0 0 0 rgba(124,232,180,.48); } 70% { box-shadow: 0 0 0 7px rgba(124,232,180,0); } 100% { box-shadow: 0 0 0 0 rgba(124,232,180,0); } }
   @keyframes orbit-turn { to { transform: rotate(336deg); } }
   @keyframes satellite-track { 0% { transform: translate(-100%,0) rotate(-18deg); } 50% { transform: translate(240px,-110px) rotate(22deg); } 100% { transform: translate(510px,18px) rotate(-18deg); } }
   @keyframes cone-sweep { to { transform: rotate(330deg); } }
   @keyframes scanline { 0% { top: 4%; opacity: .35; } 100% { top: 96%; opacity: 1; } }
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+}
+
+@media (min-width: 1024px) {
+  .desk-nav nav { display: none !important; }
 }
