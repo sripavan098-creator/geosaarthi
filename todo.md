@@ -16,3 +16,11 @@
 - [x] Add or update Vitest coverage for routing, validation, report generation, and persistence behavior.
 - [x] Verify desktop and mobile responsive rendering, run the test suite, and resolve build errors.
 - [x] Save a final checkpoint with all completed items marked complete.
+- [x] Replace the light editorial visual layer with the supplied dark mission-control frontend direction while retaining evidence-first safeguards.
+- [x] Integrate the supplied optical, SAR, and change-overlay assets through managed static storage.
+- [x] Add a cinematic orbital hero, AI-online telemetry, and clear pathways into the live analysis workspace and demo cases.
+- [x] Rebuild the workspace as a responsive satellite intelligence console with imagery viewing, mode selection, analysis stages, validation, evidence, confidence, provenance, and trace inspection.
+- [x] Add a judge-facing capability and workflow view that makes specialist routing and the required SIH paths visible.
+- [x] Add a visible analysis-stage pipeline that makes validation, routing, specialist selection, evidence extraction, confidence estimation, and answer packaging observable during execution.
+- [x] Verify the redesigned frontend at desktop and mobile widths and run the project checks.
+- [ ] Save the redesigned frontend checkpoint.
