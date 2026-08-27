@@ -72,7 +72,7 @@
 - [x] Build Alert Center, System Observatory, Learning Center, Settings, Help & Docs, Judge Mode, and Mission Replay routes.
 - [x] Add route-level loading, empty, success, failure, interaction, accessibility, and responsive states without asserting unavailable live services or model performance.
 - [x] Add automated coverage for route metadata and key operating-system helper behavior.
-- [ ] Verify all 25 routes at desktop and mobile breakpoints, run tests/type checks/build, and save a final checkpoint.
+- [x] Verify all 25 routes at desktop and mobile breakpoints, run tests/type checks/build, and save a final checkpoint.
 - [x] Resolve the verified registry-footer overlap and bring the route fallback into the same GeoSaarthi command-center visual language.
 - [x] Implement My Analyses search, filters, and saved-work reopening alongside a Dataset metadata and provenance explorer.
 - [x] Replace the Workflow Lab generic stage strip with selectable orchestration nodes and visible data-contract edges.
