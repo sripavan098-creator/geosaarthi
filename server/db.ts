@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { analysisRuns, InsertAnalysisRun, InsertUser, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,34 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function createAnalysisRun(run: InsertAnalysisRun) {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot persist analysis run: database not available");
+    return undefined;
+  }
+
+  await db.insert(analysisRuns).values(run);
+  return run.runId;
+}
+
+export async function getRecentAnalysisRuns(limit = 12) {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot retrieve analysis runs: database not available");
+    return [];
+  }
+
+  return db.select().from(analysisRuns).orderBy(desc(analysisRuns.createdAt)).limit(limit);
+}
+
+export async function getAnalysisRunByRunId(runId: string) {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot retrieve analysis report: database not available");
+    return undefined;
+  }
+
+  const result = await db.select().from(analysisRuns).where(eq(analysisRuns.runId, runId)).limit(1);
+  return result[0];
+}

@@ -27,151 +27,71 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --background: oklch(0.974 0.006 91);
+  --foreground: oklch(0.245 0.01 82);
+  --card: oklch(0.997 0.003 86);
+  --card-foreground: oklch(0.245 0.01 82);
+  --popover: oklch(0.997 0.003 86);
+  --popover-foreground: oklch(0.245 0.01 82);
+  --primary: oklch(0.42 0.07 247);
+  --primary-foreground: oklch(0.99 0.003 86);
+  --secondary: oklch(0.936 0.01 91);
+  --secondary-foreground: oklch(0.29 0.01 82);
+  --muted: oklch(0.948 0.006 91);
+  --muted-foreground: oklch(0.55 0.009 82);
+  --accent: oklch(0.925 0.021 244);
+  --accent-foreground: oklch(0.31 0.04 247);
+  --destructive: oklch(0.59 0.17 31);
+  --destructive-foreground: oklch(0.99 0.003 86);
+  --border: oklch(0.875 0.007 86);
+  --input: oklch(0.875 0.007 86);
+  --ring: oklch(0.42 0.07 247);
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-background text-foreground; font-family: "DM Sans", Arial, sans-serif; }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), select:not(:disabled), input:not(:disabled), textarea:not(:disabled) { @apply cursor-pointer; }
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
-  }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
-    }
-  }
+  .geo-shell { min-height: 100vh; background: #f7f6f2; color: #24231f; }
+  .geo-serif { font-family: "DM Serif Display", Georgia, serif; }
+  .geo-mono { font-family: "DM Sans", Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+  .geo-nav { position: fixed; inset: 0 auto 0 0; z-index: 30; width: 244px; border-right: 1px solid #dedcd4; background: rgba(255,253,252,.94); backdrop-filter: blur(16px); }
+  .geo-main { margin-left: 244px; min-height: 100vh; }
+  .geo-content { max-width: 1500px; margin: 0 auto; padding: 34px 42px 64px; }
+  .geo-panel { border: 1px solid #dedcd4; border-radius: 12px; background: #fffdfc; box-shadow: 0 12px 30px rgba(39,37,31,.035); }
+  .geo-kicker { color: #706f68; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+  .geo-title { font-family: "DM Serif Display", Georgia, serif; font-size: clamp(2.3rem, 4vw, 4.2rem); line-height: .97; letter-spacing: -.04em; }
+  .geo-section-title { font-family: "DM Serif Display", Georgia, serif; font-size: 1.65rem; line-height: 1.02; letter-spacing: -.025em; }
+  .geo-label { color: #706f68; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .geo-rule { height: 1px; background: #dedcd4; }
+  .geo-nav-item { display: flex; width: 100%; align-items: center; gap: 10px; border-radius: 8px; padding: 10px 12px; color: #706f68; font-size: 13px; font-weight: 600; text-align: left; transition: background-color 160ms ease, color 160ms ease, transform 160ms ease; }
+  .geo-nav-item:hover { background: #eeede7; color: #24231f; }
+  .geo-nav-item:active { transform: scale(.98); }
+  .geo-nav-item-active { background: #e9eff5; color: #355c7d; }
+  .geo-mode { min-height: 118px; border: 1px solid #dedcd4; border-radius: 10px; padding: 16px; text-align: left; background: #fffdfc; transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease; }
+  .geo-mode:hover { border-color: #9eafbf; background: #fbfcfd; }
+  .geo-mode:active { transform: scale(.99); }
+  .geo-mode-active { border-color: #355c7d; background: #f0f5f9; box-shadow: inset 0 0 0 1px #355c7d; }
+  .geo-demo { min-width: 206px; border: 1px solid #dedcd4; border-radius: 10px; background: #fffdfc; padding: 14px; text-align: left; transition: border-color 160ms ease, background-color 160ms ease; }
+  .geo-demo:hover { border-color: #355c7d; background: #f8fafc; }
+  .geo-input { width: 100%; border: 1px solid #d4d1c8; border-radius: 8px; background: #fffdfc; color: #24231f; padding: 11px 12px; font-size: 14px; outline: none; transition: border-color 160ms ease, box-shadow 160ms ease; }
+  .geo-input:focus { border-color: #355c7d; box-shadow: 0 0 0 3px rgba(53,92,125,.12); }
+  .geo-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 8px; background: #355c7d; color: #fff; padding: 11px 15px; font-size: 13px; font-weight: 700; transition: background-color 160ms ease, transform 160ms ease; }
+  .geo-primary:hover { background: #294b68; }
+  .geo-primary:active { transform: scale(.98); }
+  .geo-primary:disabled { cursor: not-allowed; opacity: .5; }
+  .geo-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid #d4d1c8; border-radius: 8px; background: #fffdfc; color: #24231f; padding: 10px 14px; font-size: 13px; font-weight: 700; transition: background-color 160ms ease, transform 160ms ease; }
+  .geo-secondary:hover { background: #eeede7; }.geo-secondary:active { transform: scale(.98); }
+  .geo-pill { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 5px 9px; font-size: 11px; font-weight: 700; }
+  .geo-pill-valid { background: #e6efe6; color: #426047; }.geo-pill-review { background: #f7eee5; color: #a05d32; }.geo-pill-muted { background: #eeede7; color: #706f68; }.geo-pill-blue { background: #e8eff6; color: #355c7d; }
+  .geo-grid-pattern { background-image: linear-gradient(rgba(53,92,125,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(53,92,125,.06) 1px, transparent 1px); background-size: 24px 24px; }
+  .geo-overlay-blue { background: linear-gradient(135deg, rgba(53,92,125,.78), rgba(53,92,125,.34)); }.geo-overlay-copper { background: linear-gradient(135deg, rgba(184,107,61,.82), rgba(184,107,61,.28)); }.geo-overlay-sage { background: linear-gradient(135deg, rgba(82,109,88,.82), rgba(82,109,88,.28)); }
+  @media (max-width: 960px) { .geo-nav { position: static; width: 100%; border-right: 0; border-bottom: 1px solid #dedcd4; } .geo-main { margin-left: 0; } .geo-content { padding: 24px 18px 48px; } }
 }
