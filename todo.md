@@ -24,3 +24,11 @@
 - [x] Add a visible analysis-stage pipeline that makes validation, routing, specialist selection, evidence extraction, confidence estimation, and answer packaging observable during execution.
 - [x] Verify the redesigned frontend at desktop and mobile widths and run the project checks.
 - [x] Save the redesigned frontend checkpoint.
+- [x] Add a bounded interactive Earth explorer with selectable areas of interest, map layers, and explicit simulation labeling.
+- [x] Add a bi-temporal time-machine comparison with before/after, swipe, difference, and evidence controls.
+- [x] Add browser-based voice query capture with graceful unsupported-browser and permission-denied handling.
+- [x] Add guided question suggestions, query history, precision guidance, and visible auto-routing rationale.
+- [x] Add a benchmark observatory and judge-facing metrics using clearly labeled scripted-demo statistics rather than invented live performance claims.
+- [x] Add satellite mission telemetry and a mission activity feed labeled as demo simulation.
+- [x] Test the iterative expansion and review responsive rendering.
+- [x] Save the iterative GeoSaarthi expansion checkpoint.
