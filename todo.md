@@ -23,4 +23,4 @@
 - [x] Add a judge-facing capability and workflow view that makes specialist routing and the required SIH paths visible.
 - [x] Add a visible analysis-stage pipeline that makes validation, routing, specialist selection, evidence extraction, confidence estimation, and answer packaging observable during execution.
 - [x] Verify the redesigned frontend at desktop and mobile widths and run the project checks.
-- [ ] Save the redesigned frontend checkpoint.
+- [x] Save the redesigned frontend checkpoint.
