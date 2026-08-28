@@ -82,4 +82,4 @@
 - [x] Add a complete Judge Mode proof panel with evidence, confidence, trace, and report handoff for the last declared benchmark result.
 - [x] Add replay backward and forward controls plus a persisted-report stage to Mission Replay.
 - [x] Add API and workflow documentation to Help & Docs, descriptive account and preferences controls to Settings, and distinct inspectable Observatory sections for each declared system area.
-- [ ] Prepare and push the completed GeoSaarthi project to a GitHub repository without committing secrets or generated artifacts.
+- [x] Prepare and push the completed GeoSaarthi project to a GitHub repository without committing secrets or generated artifacts.
